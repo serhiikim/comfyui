@@ -29,6 +29,11 @@ build_common_install_comfyui() {
 
     $COMFYUI_VENV_PIP install --no-cache-dir \
         -r requirements.txt
+
+    $COMFYUI_VENV_PIP install --no-cache-dir \
+        addict \
+        yapf \
+        matplotlib
 }
 
 build_common_run_tests() {
